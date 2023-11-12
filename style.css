@@ -49,6 +49,17 @@ body {
 .nav-icon:hover {
   color: var(--hover-color);
 }
+.navbar-icons1{
+  display: none;
+}
+.navbar-icons2{
+  display: flex;
+}
+
+/* .navbar-collapse.show ul li:hover{
+  
+  background-color: var(--hover-color);
+} */
 
 .main-intro-container {
   height: 92vh;
@@ -297,13 +308,24 @@ body {
 /* Media Queries for popular categories */
 
 @media (max-width: 1120px) {
-  .main-popular-cat-section-container{
+  .main-popular-cat-section-container {
     min-height: 600px;
   }
 }
 
 @media (max-width: 559px) {
-  .main-popular-cat-section-container{
+  .main-popular-cat-section-container {
     min-height: 1150px;
+  }
+}
+
+/* Media Queries for Navbar */
+
+@media (max-width: 992px) {
+  .navbar-icons2{
+    display: none;
+  }
+  .navbar-icons1{
+    display: flex;
   }
 }
