@@ -28,17 +28,16 @@ setInterval(() => {
 const introImg = document.getElementById("introImg");
 let dynamicImg = ["food-img-01.jpg", "food-img-02.jpg", "food-img-03.jpg"];
 
-
 function playAnimation() {
   introImg.src = `assets/images/${dynamicImg[0]}`;
   dynamicImg.push(dynamicImg.shift());
   introImg.style.animation = "intro-img-zoom 8s ease-in-out";
   setTimeout(() => {
     introImg.style.animation = "none";
+    introImg.src = `assets/images/${dynamicImg[0]}`;
   }, 7900);
 }
 
 setInterval(playAnimation, 8000);
 
 playAnimation();
-

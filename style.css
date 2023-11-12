@@ -69,19 +69,17 @@ body {
   object-fit: cover;
   z-index: -1;
   scale: 1.2;
-  transition: 0.5s;
 }
 
 .main-intro-container-card {
   max-width: 450px;
   position: absolute;
   margin-bottom: 75px;
+  overflow: hidden;
 }
 
 .intro-container-card-title p {
   color: var(--primary-color);
-  font-weight: 500;
-  /* text-shadow: 0 0 10px var(--secondary-color); */
 }
 
 .intro-container-card-sub-title p {
@@ -107,8 +105,7 @@ body {
 .basic-card {
   height: 550px;
   width: 300px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .basic-card-recipe-author-btn {
@@ -222,6 +219,23 @@ body {
 .text-primary {
   color: var(--primary-color) !important;
 }
+
+/* Custom Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
 /* opacity decrease/increase,transform animation for intro title */
 
 @keyframes intro-title-in {
@@ -241,6 +255,10 @@ body {
   0% {
     opacity: 1;
     transform: translateX(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-20px);
   }
   100% {
     opacity: 0;
@@ -276,18 +294,16 @@ body {
   }
 } */
 
-/* Custom Scroll Bar */
+/* Media Queries for popular categories */
 
-::-webkit-scrollbar {
-  width: 12px;
+@media (max-width: 1120px) {
+  .main-popular-cat-section-container{
+    min-height: 600px;
+  }
 }
-::-webkit-scrollbar-button {
-  display: none;
-}
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
-  border-radius: 10px;
+
+@media (max-width: 559px) {
+  .main-popular-cat-section-container{
+    min-height: 1150px;
+  }
 }
