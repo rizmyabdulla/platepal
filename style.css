@@ -148,7 +148,7 @@ body {
 /* Popular Categories Section */
 
 .main-popular-cat-section-container {
-  min-height: 200px;
+  min-height: 600px;
   margin-bottom: 250px;
   width: 100%;
   position: relative;
@@ -348,13 +348,13 @@ body {
 
 @media (max-width: 1120px) {
   .main-popular-cat-section-container {
-    min-height: 600px;
+    min-height: 800px;
   }
 }
 
 @media (max-width: 559px) {
   .main-popular-cat-section-container {
-    min-height: 1150px;
+    min-height: 1450px;
   }
 }
 
