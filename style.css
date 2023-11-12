@@ -49,10 +49,10 @@ body {
 .nav-icon:hover {
   color: var(--hover-color);
 }
-.navbar-icons1{
+.navbar-icons1 {
   display: none;
 }
-.navbar-icons2{
+.navbar-icons2 {
   display: flex;
 }
 
@@ -82,8 +82,8 @@ body {
   scale: 1.2;
 }
 
-.main-intro-container-card {
-  max-width: 450px;
+.intro-container-card {
+  max-width: 500px;
   position: absolute;
   margin-bottom: 75px;
   overflow: hidden;
@@ -156,26 +156,67 @@ body {
 
 .popular-cats-section {
   position: absolute;
-  top: 250px;
+  top: 390px;
   left: 0;
   right: 0;
 }
 .popular-cat-bg {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-image: url("https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/cooking-concept-with-ingredients-for-cooking.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: #00000060;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .popular-cat-card {
   text-align: center;
   position: relative;
 }
+.popular-img-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 15px solid rgb(243, 232, 232);
+}
+
+.popular-img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 1;
+  transition: 1s;
+}
+.popular-img-container:hover::before{
+  background: rgba(0, 0, 0, 0.1);
+  transition: 1s
+}
+
 
 .popular-cat-card img {
   width: 280px;
   height: 280px;
   object-fit: cover;
   border-radius: 100% !important;
-  border: 15px solid rgb(243, 232, 232);
+  scale: 1;
+  transition: 1s;
+}
+
+.popular-cat-card img:hover {
+  scale: 1.2;
+  transition: 1s;
 }
 
 .popular-cat-card-content {
@@ -183,6 +224,7 @@ body {
   position: absolute;
   top: auto;
   bottom: auto;
+  z-index: 2;
 }
 
 .popular-cat-card-title {
@@ -195,9 +237,6 @@ body {
 
 .main-recipe-share-section {
   background-color: white;
-  /* display: flex;
-  max-height: 400px;
-  justify-content: space-between; */
   max-height: fit-content;
   border-radius: 10px;
 }
@@ -322,10 +361,10 @@ body {
 /* Media Queries for Navbar */
 
 @media (max-width: 992px) {
-  .navbar-icons2{
+  .navbar-icons2 {
     display: none;
   }
-  .navbar-icons1{
+  .navbar-icons1 {
     display: flex;
   }
 }

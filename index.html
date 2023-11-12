@@ -83,22 +83,22 @@
 
     <div class="main-intro-container">
       <img class="intro-img" id="introImg" src="" alt="food intro image" />
-      <div class="main-intro-container-card text-center">
+      <div class="intro-container-card text-center">
         <div class="intro-container-card-title">
-          <p id="introTitle" class="display-4 fw-bold"></p>
+          <p id="introTitle" class="display-2 fw-bold"></p>
         </div>
         <div class="intro-container-card-sub-title">
-          <p class="fs-2 fw-bold">
+          <p class="fs-1 fw-bold">
             no matter how you cook, PLATEPAL has many recipes
           </p>
         </div>
-        <div class="intro-container-card-sub-description">
-          <p>
+        <div class="intro-container-card-description">
+          <p class="px-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
         </div>
-        <div class="intro-container-card-sub-btn">
+        <div class="intro-container-card-btn mt-5">
           <button class="btn btn-primary py-3 px-5">
             Explore Recipes <i class="fa-solid fa-fork-knife"></i>
           </button>
@@ -223,19 +223,33 @@
     </div>
     <div class="main-popular-cat-section-container">
       <!-- Section header image -->
-      <img
+      <div class="popular-cat-bg">
+        <p class="fs-6 text-white">FEATURED</p>
+        <p class="fs-1 fw-bold text-white">Popular Categories</p>
+        <p class="fs-6 text-white text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec <br />
+          ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+      <!-- <img
         src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/cooking-concept-with-ingredients-for-cooking.jpg"
         alt=""
         class="popular-cat-bg"
-      />
-      <div class="popular-cats-section d-flex flex-wrap justify-content-center">
+      /> -->
+      <div
+        class="popular-cats-section d-flex flex-wrap justify-content-center gap-3"
+      >
         <div
           class="popular-cat-card d-flex justify-content-center align-items-center"
         >
-          <img
-            src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/roasted-prawns-shrimps-in-frying-pan-with-lemon-and-chili-pepper-e1649757645348.jpg"
-            alt=""
-          />
+          <div class="popular-img-container">
+            <img
+              src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/roasted-prawns-shrimps-in-frying-pan-with-lemon-and-chili-pepper-e1649757645348.jpg"
+              alt=""
+            />
+          </div>
+
           <div class="popular-cat-card-content">
             <p class="popular-cat-card-title">Main Dish</p>
             <button class="btn btn-primary">
@@ -247,10 +261,12 @@
         <div
           class="popular-cat-card d-flex flex-wrap justify-content-center align-items-center"
         >
-          <img
-            src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/roasted-prawns-shrimps-in-frying-pan-with-lemon-and-chili-pepper-e1649757645348.jpg"
-            alt=""
-          />
+          <div class="popular-img-container">
+            <img
+              src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/baked-spanakopita-spiral-filo-pastry-puff-pie-with-feta-cheese-and-spinach-.jpg"
+              alt=""
+            />
+          </div>
           <div class="popular-cat-card-content">
             <p class="popular-cat-card-title">Main Dish</p>
             <button class="btn btn-primary">
@@ -262,10 +278,12 @@
         <div
           class="popular-cat-card d-flex flex-wrap justify-content-center align-items-center"
         >
-          <img
-            src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/roasted-prawns-shrimps-in-frying-pan-with-lemon-and-chili-pepper-e1649757645348.jpg"
-            alt=""
-          />
+          <div class="popular-img-container">
+            <img
+              src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/mojito.jpg"
+              alt=""
+            />
+          </div>
           <div class="popular-cat-card-content">
             <p class="popular-cat-card-title">Main Dish</p>
             <button class="btn btn-primary">
@@ -277,10 +295,12 @@
         <div
           class="popular-cat-card d-flex flex-wrap justify-content-center align-items-center"
         >
-          <img
-            src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/roasted-prawns-shrimps-in-frying-pan-with-lemon-and-chili-pepper-e1649757645348.jpg"
-            alt=""
-          />
+          <div class="popular-img-container">
+            <img
+              src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/breakfast.jpg"
+              alt=""
+            />
+          </div>
           <div class="popular-cat-card-content">
             <p class="popular-cat-card-title">Main Dish</p>
             <button class="btn btn-primary">
