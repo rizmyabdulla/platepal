@@ -41,3 +41,9 @@ function playAnimation() {
 setInterval(playAnimation, 8000);
 
 playAnimation();
+
+document.addEventListener("DOMContentLoaded", function () {
+  IntersectionObserverUtil.init(".observer", (id) => {
+    changeHash(id);
+  });
+});
