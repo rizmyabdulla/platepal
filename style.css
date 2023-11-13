@@ -98,19 +98,8 @@ body {
 }
 
 /* Popular Recipes Section */
-.main-popular-section-container {
-}
-.popular-section-header {
-}
 
-.popular-section-header-content {
-  display: flex;
-  justify-content: space-between;
-}
-.popular-section-title {
-  font-weight: 600;
-  margin: 0;
-}
+/* CURRENTLY NO CSS FOR Popular Recipes Section */
 
 /* section card */
 .basic-card {
@@ -199,11 +188,10 @@ body {
   z-index: 1;
   transition: 1s;
 }
-.popular-img-container:hover::before{
+.popular-img-container:hover::before {
   background: rgba(0, 0, 0, 0.1);
-  transition: 1s
+  transition: 1s;
 }
-
 
 .popular-cat-card img {
   width: 280px;
@@ -254,6 +242,8 @@ body {
 
 /* Components */
 
+/* Button Component */
+
 .btn-primary {
   background-color: var(--primary-color) !important;
   border: none;
@@ -266,8 +256,21 @@ body {
   background-color: var(--hover-color) !important;
 }
 
+/* Text Component */
+
 .text-primary {
   color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+/* Card List Component */
+
+.card-list-header-title {
+  font-weight: 600;
+  margin: 0;
 }
 
 /* Custom Scroll Bar */
@@ -335,6 +338,8 @@ body {
     opacity: 1;
   }
 }
+
+/* Card List header Animation */
 
 /* Media Queries for recipe share section Image */
 
