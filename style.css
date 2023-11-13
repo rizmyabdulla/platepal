@@ -81,6 +81,7 @@ body {
   object-fit: cover;
   z-index: -1;
   scale: 1.2;
+  transition: opacity 300ms ease;
 }
 
 .intro-container-card {
