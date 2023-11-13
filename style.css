@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(243, 232, 232);
+  scroll-behavior: smooth;
 }
 .navbar-brand {
   text-align: center;
@@ -274,19 +275,19 @@ body {
   margin: 0;
 }
 
-#cardHeader:target .card-list-header-title {
+#popularRecipes:target .card-list-header-title {
   animation: intro-title-in 1s ease-in-out;
 }
 
-#cardHeader:target .card-list-header-btn {
+#popularRecipes:target .card-list-header-btn {
   animation: card-list-header-btn-in 1s ease-in-out;
 }
 
-#cardHeader1:target .card-list-header-title {
+#latestRecipes:target .card-list-header-title {
   animation: intro-title-in 1s ease-in-out;
 }
 
-#cardHeader1:target .card-list-header-btn {
+#latestRecipes:target .card-list-header-btn {
   animation: card-list-header-btn-in 1s ease-in-out;
 }
 
