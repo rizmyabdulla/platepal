@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(243, 232, 232);
-  scroll-behavior: smooth;
 }
 .navbar-brand {
   text-align: center;
@@ -57,11 +56,6 @@ body {
   display: flex;
 }
 
-/* .navbar-collapse.show ul li:hover{
-  
-  background-color: var(--hover-color);
-} */
-
 .main-intro-container {
   height: 92vh;
   background: linear-gradient(
@@ -100,10 +94,6 @@ body {
 }
 
 /* Popular Recipes Section */
-
-.main-popular-section-container {
-}
-/* CURRENTLY NO CSS FOR Popular Recipes Section */
 
 /* section card */
 .basic-card {
@@ -168,10 +158,20 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+#popularCategories:target .popular-cat-bg-content {
+  animation: bounceIn 1s forwards;
+}
+
 .popular-cat-card {
   text-align: center;
   position: relative;
 }
+
+#popularCategories:target .popular-cat-card {
+  animation: zoomIn 1s forwards;
+}
+
 .popular-img-container {
   position: relative;
   display: inline-block;
@@ -276,20 +276,20 @@ body {
   margin: 0;
 }
 
-#popularRecipes:target .card-list-header-title {
-  animation: intro-title-in 1s ease-in-out;
+:target .card-list-header-title {
+  animation: fadeInLeft 1s forwards;
 }
 
-#popularRecipes:target .card-list-header-btn {
-  animation: card-list-header-btn-in 1s ease-in-out;
+:target .card-list-header-btn {
+  animation: fadeInRight 1s forwards;
 }
 
-#latestRecipes:target .card-list-header-title {
-  animation: intro-title-in 1s ease-in-out;
+#popularRecipes:target .basic-card {
+  animation: zoomIn 0.5s;
 }
 
-#latestRecipes:target .card-list-header-btn {
-  animation: card-list-header-btn-in 1s ease-in-out;
+#latestRecipes:target .basic-card {
+  animation: flipInY 0.5s;
 }
 
 /* Custom Scroll Bar */
@@ -348,39 +348,6 @@ body {
     transform: scale(1.2);
   }
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Card List header Animation */
-
-@keyframes card-list-header-btn-in {
-  0% {
-    opacity: 0;
-    transform: translateX(120px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(-20px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-/* Media Queries for recipe share section Image */
-
-/* @media (max-width: 998px) {
-  .recipe-share-section-img {
-    display: none;
-  }
-} */
 
 /* Media Queries for popular categories */
 

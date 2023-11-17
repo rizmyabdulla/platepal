@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlatePal</title>
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -92,12 +93,6 @@
             no matter how you cook, PLATEPAL has many recipes
           </p>
         </div>
-        <div class="intro-container-card-description">
-          <p class="px-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
         <div class="intro-container-card-btn mt-5">
           <button class="btn btn-primary py-3 px-5">
             Explore Recipes <i class="fa-solid fa-fork-knife"></i>
@@ -106,8 +101,11 @@
       </div>
     </div>
 
-    <div class="container main-popular-section-container py-5">
-      <div class="card-list-header observer" id="popularRecipes">
+    <div
+      class="container main-popular-section-container py-5 observer"
+      id="popularRecipes"
+    >
+      <div class="card-list-header">
         <div class="card-list-header-content d-flex justify-content-between">
           <p class="card-list-header-title fs-3">Popular Recipes</p>
           <button class="card-list-header-btn btn btn-primary">
@@ -118,7 +116,7 @@
       </div>
 
       <div
-        class="card-list-container py-3 d-flex flex-wrap justify-content-center"
+        class="card-list-container to-left py-3 d-flex flex-wrap justify-content-center"
       >
         <div class="card basic-card p-3 border-0">
           <div class="basic-card-img-container">
@@ -221,22 +219,22 @@
         </div>
       </div>
     </div>
-    <div class="main-popular-cat-section-container">
+    <div
+      class="main-popular-cat-section-container observer"
+      id="popularCategories"
+    >
       <!-- Section header image -->
       <div class="popular-cat-bg">
-        <p class="fs-6 text-white">FEATURED</p>
-        <p class="fs-1 fw-bold text-white">Popular Categories</p>
-        <p class="fs-6 text-white text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec <br />
-          ullamcorper mattis, pulvinar dapibus leo.
-        </p>
+        <div class="popular-cat-bg-content text-center">
+          <p class="fs-6 text-white">FEATURED</p>
+          <p class="fs-1 fw-bold text-white">Popular Categories</p>
+          <p class="fs-6 text-white text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec <br />
+            ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
       </div>
-      <!-- <img
-        src="https://point.moxcreative.com/yumma/wp-content/uploads/sites/2/2022/04/cooking-concept-with-ingredients-for-cooking.jpg"
-        alt=""
-        class="popular-cat-bg"
-      /> -->
       <div
         class="popular-cats-section d-flex flex-wrap justify-content-center gap-3"
       >
@@ -311,8 +309,11 @@
       </div>
     </div>
 
-    <div class="container main-latest-cat-section-container py-5">
-      <div class="card-list-header observer" id="latestRecipes">
+    <div
+      class="container main-latest-cat-section-container py-5 observer"
+      id="latestRecipes"
+    >
+      <div class="card-list-header">
         <div class="card-list-header-content d-flex justify-content-between">
           <p class="card-list-header-title fs-3">Latest Recipes</p>
           <button class="card-list-header-btn btn btn-primary">
@@ -323,7 +324,7 @@
       </div>
 
       <div
-        class="card-list-container py-3 d-flex flex-wrap justify-content-center"
+        class="card-list-container py-3 d-flex flex-wrap justify-content-center to-left"
       >
         <div class="card basic-card p-3 mt-3 border-0">
           <div class="basic-card-img-container">

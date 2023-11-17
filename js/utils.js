@@ -39,7 +39,7 @@ const IntersectionObserverUtil = {
         if (entry.isIntersecting) {
           callback(entry.target.id);
         } else {
-          callback("#");
+          callback("lore");
         }
       });
     };
